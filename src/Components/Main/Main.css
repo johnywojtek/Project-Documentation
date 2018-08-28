@@ -1,0 +1,32 @@
+.main {
+  margin-top: 60px;
+  margin-left: 33vw;
+  margin-right: 10vw;
+  min-width: 800px;
+  background-color: #fff; }
+
+.mainItem {
+  font-size: 24px;
+  word-wrap: break-word;
+  max-width: 935px; }
+  .mainItem__heading {
+    font-size: 31px;
+    color: #0d2b3e;
+    font-weight: 400; }
+  .mainItem__def {
+    font-size: 15px;
+    color: #373e42;
+    line-height: 26px; }
+
+.mainHeading {
+  font-size: 24px;
+  word-wrap: break-word;
+  max-width: 935px; }
+  .mainHeading__heading {
+    font-size: 31px;
+    color: #0d2b3e;
+    font-weight: 400; }
+  .mainHeading__def {
+    font-size: 15px;
+    color: #373e42;
+    line-height: 26px; }

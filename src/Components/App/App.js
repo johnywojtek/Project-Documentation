@@ -4,7 +4,7 @@ import arrays from "../Arrays/arrays";
 import "../prism/prism.css";
 import Header from "../Header";
 import Main from "../Main";
-import Nav from "../Nav";
+import Navig from "../Nav";
 import Prism from "prismjs";
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
             <div>
                 <Header />
                 <div className="mainContener">
-                    <Nav />
+                    <Navig />
                     <Main array={arrays} />
                 </div>
             </div>

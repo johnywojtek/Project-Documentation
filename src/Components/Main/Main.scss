@@ -1,15 +1,19 @@
 .main {
-    margin-top: 60px;
-    margin-left: 33vw;
+    margin-left: 30vw;
     margin-right: 10vw;
     min-width: 800px;
     background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 33px;
+    padding-left: 33px;
 }
 
-.mainItem {
-    font-size: 24px;
+.mainHeading {
+    padding-top: 9px;
+    padding-bottom: 39px;
     word-wrap: break-word;
     max-width: 935px;
+    border-bottom: 1px solid rgba(120, 134, 156, 0.08);
     &__heading {
         font-size: 31px;
         color: #0d2b3e;
@@ -22,14 +26,16 @@
     }
 }
 
-.mainHeading {
+.mainItem {
+    padding: 39px 0;
     font-size: 24px;
     word-wrap: break-word;
     max-width: 935px;
+    border-bottom: 1px solid rgba(120, 134, 156, 0.08);
     &__heading {
-        font-size: 31px;
+        font-size: 22px;
         color: #0d2b3e;
-        font-weight: 400;
+        font-weight: 600;
     }
     &__def {
         font-size: 15px;

@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import "./Nav.css";
 import { Collapse, Button, CardBody, Card } from "reactstrap";
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch,
+    Redirect
+} from "react-router-dom";
 
 class Example extends Component {
     constructor(props) {
@@ -47,24 +54,7 @@ class Example extends Component {
         return (
             <div>
                 <div>
-                    <a
-                        color="primary"
-                        onClick={this.toggle}
-                        style={{ marginBottom: "1rem" }}
-                        id="collapse1"
-                    >
-                        Toggle
-                    </a>
-                    <Collapse isOpen={this.state.collapse1}>
-                        <Card>
-                            <CardBody>
-                                Anim pariatur cliche reprehenderit, enim eiusmod
-                                high life accusamus terry richardson ad squid.
-                                Nihil anim keffiyeh helvetica, craft beer labore
-                                wes anderson cred nesciunt sapiente ea proident.
-                            </CardBody>
-                        </Card>
-                    </Collapse>
+                    <Link to="/">Home</Link>
                 </div>
                 <div>
                     <a
@@ -73,26 +63,26 @@ class Example extends Component {
                         style={{ marginBottom: "1rem" }}
                         id="collapse2"
                     >
-                        Toggle
+                        Array
                     </a>
                     <Collapse isOpen={this.state.collapse2}>
                         <Card>
                             <CardBody>
-                                Anim pariatur cliche reprehenderit, enim eiusmod
-                                high life accusamus terry richardson ad squid.
-                                Nihil anim keffiyeh helvetica, craft beer labore
-                                wes anderson cred nesciunt sapiente ea proident.
+                                <ul>
+                                    <li>
+                                        <Link to="/addremove">
+                                            Add/remove items
+                                        </Link>
+                                    </li>
+                                    <li>fwafaw</li>
+                                    <li>fwafawfa</li>
+                                </ul>
                             </CardBody>
                         </Card>
                     </Collapse>
                 </div>
                 <div>
-                    <a
-                        color="primary"
-                        onClick={this.toggle}
-                        style={{ marginBottom: "1rem" }}
-                        id="collapse3"
-                    >
+                    <a color="primary" onClick={this.toggle} id="collapse3">
                         Toggle
                     </a>
                     <Collapse isOpen={this.state.collapse3}>

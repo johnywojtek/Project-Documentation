@@ -24,5 +24,8 @@
 li {
   list-style: none; }
 
+ul {
+  margin: 0; }
+
 .card-body {
   padding: 0 1em; }

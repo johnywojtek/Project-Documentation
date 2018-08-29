@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import Prism from "prismjs";
-import "./Main.css";
-class Main extends Component {
+import "./AandR.css";
+import arrays from "../data/arrays.js";
+
+class AandR extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            array: this.props.array
+            array: arrays
         };
     }
     componentDidMount() {
@@ -17,10 +19,10 @@ class Main extends Component {
             return (
                 <div className="mainItem">
                     <p className="mainItem__heading">Array {e.name}</p>
-                    <p className="mainItem__def">{e.example}</p>
+                    <p className="mainItem__def">{e.definition}</p>
                     <pre>
                         <code className="language-javascript">
-                            {e.definition.join("\r\n")}
+                            {e.example.join("\r\n")}
                         </code>
                     </pre>
                 </div>
@@ -28,18 +30,17 @@ class Main extends Component {
         });
 
         return (
-            <div className="main">
+            <div>
                 <div className="mainHeading">
-                    <p className="mainHeading__heading">
-                        metody iteracyjne siala sialaa
+                    <p className="mainHeading__heading">Add/remove items</p>
+                    <p className="mainHeading__def">
+                        .pop() .push() .reverse() .shift() .unshift()
                     </p>
-                    <p className="mainHeading__def">Ty i ja ty i ja sialalaa</p>
                 </div>
-
                 <div>{list}</div>
             </div>
         );
     }
 }
 
-export default Main;
+export default AandR;

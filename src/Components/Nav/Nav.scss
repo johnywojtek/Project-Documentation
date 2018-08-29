@@ -26,6 +26,25 @@
 li {
     list-style: none;
 }
+ul {
+    margin: 0;
+}
 .card-body {
     padding: 0 1em;
 }
+
+// <HashRouter>
+// <MainTemplate>
+//   <Switch>
+//     <Route exact path="/" component={Main} />
+//     <Route path="/about" component={AboutTemplate} />
+//     <Route path="*" component={NotFound} />
+//   </Switch>
+// </MainTemplate>
+// </HashRouter>
+
+// <div>
+// <div className="mainContener">
+//     <Main array={arrays} />
+// </div>
+// </div>

@@ -1,22 +1,40 @@
 import React, { Component } from "react";
-import arrays from "../Arrays/arrays";
-
+import NotFound from "../NotFound";
+import "./App.css";
 import "../prism/prism.css";
 import Header from "../Header";
-import Main from "../Main";
+import AandR from "../AandR";
 import Navig from "../Nav";
 import Prism from "prismjs";
+import Home from "../Home";
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch,
+    Redirect
+} from "react-router-dom";
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <Header />
-                <div className="mainContener">
+            <Router>
+                <div>
+                    <Header />
                     <Navig />
-                    <Main array={arrays} />
+                    <div className="main">
+                        <Switch>
+                            <Route exact path="/" component={Home} />
+                            <Route
+                                exact
+                                path="/addremove"
+                                render={() => <AandR />}
+                            />
+                            <Route component={NotFound} />
+                        </Switch>
+                    </div>
                 </div>
-            </div>
+            </Router>
         );
     }
 }

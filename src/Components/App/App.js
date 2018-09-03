@@ -5,15 +5,9 @@ import "../prism/prism.css";
 import Header from "../Header";
 import AandR from "../AandR";
 import Navig from "../Nav";
-import Prism from "prismjs";
+import ReactComp from "../ReactComp";
 import Home from "../Home";
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Switch,
-    Redirect
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
     render() {
@@ -29,6 +23,11 @@ class App extends Component {
                                 exact
                                 path="/addremove"
                                 render={() => <AandR />}
+                            />
+                            <Route
+                                exact
+                                path="/component"
+                                component={ReactComp}
                             />
                             <Route component={NotFound} />
                         </Switch>

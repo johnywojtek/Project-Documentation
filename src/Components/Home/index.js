@@ -4,21 +4,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h1>Hello on Page go to</h1>
-                <ul>
-                    <li>
-                        <a href="/">array</a>
-                    </li>
-                    <li>
-                        <a href="/">fwa</a>
-                    </li>
-                    <li>
-                        <a href="/">vxb</a>
-                    </li>
-                    <li>
-                        <a href="/">rgy</a>
-                    </li>
-                </ul>
+                <h1>Hello on Page DOSC</h1>
             </div>
         );
     }

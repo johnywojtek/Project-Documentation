@@ -74,8 +74,6 @@ class Example extends Component {
                                             Add/remove items
                                         </Link>
                                     </li>
-                                    <li>fwafaw</li>
-                                    <li>fwafawfa</li>
                                 </ul>
                             </CardBody>
                         </Card>
@@ -83,15 +81,12 @@ class Example extends Component {
                 </div>
                 <div>
                     <a color="primary" onClick={this.toggle} id="collapse3">
-                        Toggle
+                        React
                     </a>
                     <Collapse isOpen={this.state.collapse3}>
                         <Card>
                             <CardBody>
-                                Anim pariatur cliche reprehenderit, enim eiusmod
-                                high life accusamus terry richardson ad squid.
-                                Nihil anim keffiyeh helvetica, craft beer labore
-                                wes anderson cred nesciunt sapiente ea proident.
+                                <Link to="component">React Components</Link>
                             </CardBody>
                         </Card>
                     </Collapse>

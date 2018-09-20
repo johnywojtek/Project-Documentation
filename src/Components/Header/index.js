@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "../../styles/main.scss";
 import {
     Collapse,
     Navbar,
@@ -13,7 +13,6 @@ import {
     DropdownMenu,
     DropdownItem
 } from "reactstrap";
-import "./Header.css";
 
 class NavSearch extends Component {
     render() {

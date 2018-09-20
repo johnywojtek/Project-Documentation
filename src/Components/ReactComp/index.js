@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Prism from "prismjs";
-import "./React.css";
+import "../../styles/main.scss";
 import arrays from "../data/react";
 
 class ReactComp extends Component {

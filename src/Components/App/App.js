@@ -1,12 +1,13 @@
 import React, { Component } from "react";
-import NotFound from "../NotFound";
-import "./App.css";
+
+import "../../styles/main.css";
 import "../prism/prism.css";
 import Header from "../Header";
 import AandR from "../AandR";
 import Navig from "../Nav";
 import ReactComp from "../ReactComp";
 import Home from "../Home";
+import NotFound from "../NotFound";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {

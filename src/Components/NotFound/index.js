@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./NotFound.css";
+import "../../styles/main.scss";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 class NotFound extends Component {

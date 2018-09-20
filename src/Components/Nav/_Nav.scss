@@ -29,25 +29,9 @@ li {
 ul {
     margin: 0;
 }
-.card-body {
+.card {
     padding: 0 1em;
 }
 a {
     color: #373e42;
 }
-
-// <HashRouter>
-// <MainTemplate>
-//   <Switch>
-//     <Route exact path="/" component={Main} />
-//     <Route path="/about" component={AboutTemplate} />
-//     <Route path="*" component={NotFound} />
-//   </Switch>
-// </MainTemplate>
-// </HashRouter>
-
-// <div>
-// <div className="mainContener">
-//     <Main array={arrays} />
-// </div>
-// </div>

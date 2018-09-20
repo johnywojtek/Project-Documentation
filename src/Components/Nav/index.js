@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Nav.css";
+import "../../styles/main.scss";
 import { Collapse, Button, CardBody, Card } from "reactstrap";
 import {
     BrowserRouter as Router,
@@ -9,14 +9,14 @@ import {
     Redirect
 } from "react-router-dom";
 
-class Example extends Component {
+class Navigation extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            collapse1: false,
-            collapse2: false,
-            collapse3: false
+            collapse3: false,
+            collapse4: false,
+            collapse5: false
         };
     }
 
@@ -37,9 +37,6 @@ class Example extends Component {
     toggle = e => {
         console.log(this.getCollapseState(e.target.id));
         if (e.target.id === false) {
-            // this.setState({
-            //     [e.target.id]: true
-            // });
             this.setState(this.getCollapseState(e.target.id));
         } else {
             this.setState(this.getCollapseState(e.target.id));
@@ -56,38 +53,35 @@ class Example extends Component {
                 <div>
                     <Link to="/">Home</Link>
                 </div>
+
                 <div>
-                    <a
-                        color="primary"
-                        onClick={this.toggle}
-                        style={{ marginBottom: "1rem" }}
-                        id="collapse2"
-                    >
-                        Array
-                    </a>
-                    <Collapse isOpen={this.state.collapse2}>
-                        <Card>
-                            <CardBody>
-                                <ul>
-                                    <li>
-                                        <Link to="/addremove">
-                                            Add/remove items
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </CardBody>
-                        </Card>
-                    </Collapse>
-                </div>
-                <div>
-                    <a color="primary" onClick={this.toggle} id="collapse3">
+                    <a onClick={this.toggle} id="collapse3">
                         React
                     </a>
                     <Collapse isOpen={this.state.collapse3}>
                         <Card>
-                            <CardBody>
-                                <Link to="component">React Components</Link>
-                            </CardBody>
+                            <Link to="component">React Components</Link>
+                            <Link to="cra">Create React App</Link>
+                        </Card>
+                    </Collapse>
+                </div>
+                <div>
+                    <a onClick={this.toggle} id="collapse4">
+                        JavaScript
+                    </a>
+                    <Collapse isOpen={this.state.collapse4}>
+                        <Card>
+                            <Link to="addremove">Array Methods</Link>
+                        </Card>
+                    </Collapse>
+                </div>
+                <div>
+                    <a onClick={this.toggle} id="collapse5">
+                        CSS
+                    </a>
+                    <Collapse isOpen={this.state.collapse5}>
+                        <Card>
+                            <Link to="sass">Sass</Link>
                         </Card>
                     </Collapse>
                 </div>
@@ -102,22 +96,7 @@ class Navig extends Component {
             <div className="sidebar">
                 <div className="navig">
                     <div className="navig__logo">Nub DOSC</div>
-                    <Example />
-
-                    <ul>
-                        <li>
-                            <a href="/">obj</a>
-                        </li>
-                        <li>
-                            <a href="/">string</a>
-                        </li>
-                        <li>
-                            <a href="/">iteraive</a>
-                        </li>
-                        <li>
-                            <a href="/">mutableenable</a>
-                        </li>
-                    </ul>
+                    <Navigation />
                 </div>
             </div>
         );

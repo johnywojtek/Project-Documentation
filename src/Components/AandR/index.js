@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Prism from "prismjs";
 import "../../styles/main.scss";
-import arrays from "../data/arrays.js";
+import arrays from "../../data/arrays";
 
 class AandR extends Component {
     constructor(props) {

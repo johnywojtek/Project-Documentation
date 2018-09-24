@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Prism from "prismjs";
 import "../../styles/main.scss";
-import arrays from "../data/react";
+import arrays from "../../data/react";
 
-class ReactComp extends Component {
+class ReactComponents extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -44,4 +44,4 @@ class ReactComp extends Component {
     }
 }
 
-export default ReactComp;
+export default ReactComponents;

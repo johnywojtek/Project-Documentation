@@ -60,7 +60,8 @@ class Navigation extends Component {
                     </a>
                     <Collapse isOpen={this.state.collapse3}>
                         <Card>
-                            <Link to="component">React Components</Link>
+                            <Link to="reactComponent">Components</Link>
+                            <Link to="reactEvents">Events</Link>
                             <Link to="cra">Create React App</Link>
                         </Card>
                     </Collapse>

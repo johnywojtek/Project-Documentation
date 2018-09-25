@@ -4,18 +4,12 @@ import "../../styles/main.scss";
 import arrays from "../../data/arrays";
 
 class AandR extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            array: arrays
-        };
-    }
     componentDidMount() {
         Prism.highlightAll();
     }
 
     render() {
-        let list = this.state.array.map(e => {
+        let list = arrays.map(e => {
             return (
                 <div className="mainItem">
                     <p className="mainItem__heading">Array {e.name}</p>

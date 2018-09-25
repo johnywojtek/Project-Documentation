@@ -1,13 +1,7 @@
 import React, { Component } from "react";
 import "../../styles/main.scss";
-import { Collapse, Button, CardBody, Card } from "reactstrap";
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Switch,
-    Redirect
-} from "react-router-dom";
+import { Collapse, Card } from "reactstrap";
+import { Link } from "react-router-dom";
 
 class Navigation extends Component {
     constructor(props) {
@@ -35,17 +29,14 @@ class Navigation extends Component {
     }
 
     toggle = e => {
-        console.log(this.getCollapseState(e.target.id));
+        console.log(e.target.id);
+
         if (e.target.id === false) {
             this.setState(this.getCollapseState(e.target.id));
         } else {
             this.setState(this.getCollapseState(e.target.id));
         }
     };
-
-    componentDidUpdate() {
-        console.log(this.state);
-    }
 
     render() {
         return (
@@ -91,16 +82,13 @@ class Navigation extends Component {
     }
 }
 
-class Navig extends Component {
-    render() {
-        return (
-            <div className="sidebar">
-                <div className="navig">
-                    <div className="navig__logo">Nub DOSC</div>
-                    <Navigation />
-                </div>
-            </div>
-        );
-    }
-}
+const Navig = () => (
+    <div className="sidebar">
+        <div className="navig">
+            <div className="navig__logo">Nub DOSC</div>
+            <Navigation />
+        </div>
+    </div>
+);
+
 export default Navig;

@@ -43,6 +43,7 @@ pre {
 
 .header {
   margin-left: 30vw;
+  overflow: visible;
   margin-right: 10vw;
   padding-left: 2vw;
   border-bottom: 1px solid rgba(120, 134, 156, 0.08); }
@@ -65,6 +66,11 @@ pre {
     font-weight: 600;
     font-size: 25px;
     margin-bottom: 3em; }
+
+.activeNav {
+  font-size: 200px;
+  background-color: #000;
+  font-size: bold; }
 
 .card {
   background-color: #f5f7f9;

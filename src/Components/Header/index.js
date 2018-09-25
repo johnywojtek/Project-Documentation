@@ -4,7 +4,6 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
     NavLink,
@@ -14,26 +13,26 @@ import {
     DropdownItem
 } from "reactstrap";
 
-class NavSearch extends Component {
-    render() {
-        return (
-            <form className="form-inline my-2 my-lg-0">
-                <input
-                    className="form-control mr-sm-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                />
-                <button
-                    className="btn btn-outline-success my-2 my-sm-0"
-                    type="submit"
-                >
-                    Search
-                </button>
-            </form>
-        );
-    }
-}
+// class NavSearch extends Component {
+//     render() {
+//         return (
+//             <form className="form-inline my-2 my-lg-0">
+//                 <input
+//                     className="form-control mr-sm-3"
+//                     type="search"
+//                     placeholder="Search"
+//                     aria-label="Search"
+//                 />
+//                 <button
+//                     className="btn btn-outline-success my-2 my-sm-0"
+//                     type="submit"
+//                 >
+//                     Search
+//                 </button>
+//             </form>
+//         );
+//     }
+// }
 
 export default class Header extends Component {
     constructor(props) {
@@ -52,18 +51,13 @@ export default class Header extends Component {
     render() {
         return (
             <div className="header">
-                <Navbar color="white" light expand="md">
-                    <NavbarBrand href="/">
+                <Navbar color="white" expand="md">
+                    {/* <NavbarBrand href="/">
                         <NavSearch />
-                    </NavbarBrand>
+                    </NavbarBrand> */}
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <NavLink href="/components/">
-                                    Components
-                                </NavLink>
-                            </NavItem>
                             <NavItem>
                                 <NavLink href="https://github.com/johnywojtek">
                                     GitHub
@@ -71,13 +65,15 @@ export default class Header extends Component {
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
-                                    Podaj hasło
+                                    Kontakt
                                 </DropdownToggle>
                                 <DropdownMenu right>
-                                    <DropdownItem>Ptaki Latają</DropdownItem>
-                                    <DropdownItem>Kluczem</DropdownItem>
-                                    <DropdownItem divider />
-                                    <DropdownItem>Reset</DropdownItem>
+                                    <DropdownItem>
+                                        johnywojtek@gmail.com
+                                    </DropdownItem>
+                                    <DropdownItem>
+                                        Tel: 728 326 928
+                                    </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </Nav>

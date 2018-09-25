@@ -5,19 +5,12 @@ import arrays from "../../data/events";
 import arraysExample from "../../data/eventsExample";
 
 class ReactEvents extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            array: arrays,
-            array2: arraysExample
-        };
-    }
     componentDidMount() {
         Prism.highlightAll();
     }
 
     render() {
-        let list = this.state.array.map(e => {
+        let list = arrays.map(e => {
             return (
                 <div className="mainItem">
                     <p className="mainItem__heading">{e.name}</p>
@@ -30,7 +23,7 @@ class ReactEvents extends Component {
             );
         });
 
-        let list2 = this.state.array2.map(e => {
+        let list2 = arraysExample.map(e => {
             return (
                 <div className="mainItem">
                     <pre className="mainItem__pre">

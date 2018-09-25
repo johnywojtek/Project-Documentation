@@ -8,9 +8,10 @@ import ReactComponents from "../ReactComponents";
 import Home from "../Home";
 import ReactEvents from "../ReactEvents";
 import NotFound from "../NotFound";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-class App extends Component {
+class Routes extends Component {
     render() {
         return (
             <Router>
@@ -37,4 +38,4 @@ class App extends Component {
         );
     }
 }
-export default App;
+export default Routes;

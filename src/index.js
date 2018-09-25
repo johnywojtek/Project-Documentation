@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import App from "./Components/App/index";
-import registerServiceWorker from "./registerServiceWorker";
+import Routes from "./Components/Routes/index";
 
 document.addEventListener("DOMContentLoaded", function() {
-    ReactDOM.render(<App />, document.getElementById("root"));
+    ReactDOM.render(<Routes />, document.getElementById("root"));
 });

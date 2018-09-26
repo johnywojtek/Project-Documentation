@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../../styles/main.css";
-import "../prism/prism.css";
+import "../prism/prism2.css";
 import Header from "../Header";
 import AandR from "../AandR";
 import Navig from "../Nav";
@@ -21,7 +21,10 @@ class Routes extends Component {
                     <div className="main">
                         <Switch>
                             <Route exact path="/" component={Home} />
-                            <Route path="/addremove" render={() => <AandR />} />
+                            <Route
+                                path="/jsAddAndRemove"
+                                render={() => <AandR />}
+                            />
                             <Route
                                 path="/reactComponent"
                                 component={ReactComponents}

@@ -52,7 +52,11 @@ class Navigation extends Component {
                     <Collapse isOpen={this.state.collapse3}>
                         <Card>
                             <Link to="reactComponent">Components</Link>
+                            <Link to="reactProps">Props</Link>
+                            <Link to="reactState">State</Link>
                             <Link to="reactEvents">Events</Link>
+                            <Link to="reactRouter">Router</Link>
+                            <Link to="reactRedux">Redux</Link>
                             <Link to="cra">Create React App</Link>
                         </Card>
                     </Collapse>
@@ -63,7 +67,13 @@ class Navigation extends Component {
                     </a>
                     <Collapse isOpen={this.state.collapse4}>
                         <Card>
-                            <Link to="addremove">Array Methods</Link>
+                            <Link to="jsAddAndRemove">Add And Remove</Link>
+                            <Link to="jsStringMethods">String Methods</Link>
+                            <Link to="jsObjects">Objects</Link>
+                            <Link to="jsTiming">Timing Functions</Link>
+                            <Link to="jsExamples">
+                                Nice Animations and Examples
+                            </Link>
                         </Card>
                     </Collapse>
                 </div>
@@ -73,7 +83,10 @@ class Navigation extends Component {
                     </a>
                     <Collapse isOpen={this.state.collapse5}>
                         <Card>
-                            <Link to="sass">Sass</Link>
+                            <Link to="cssAnimations">Animations</Link>
+                            <Link to="cssSass">Sass</Link>
+                            <Link to="cssFlexbox">Flexbox</Link>
+                            <Link to="cssGrid">Grid</Link>
                         </Card>
                     </Collapse>
                 </div>

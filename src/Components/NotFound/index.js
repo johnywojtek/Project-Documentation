@@ -3,10 +3,10 @@ import "../../styles/main.scss";
 import { Link } from "react-router-dom";
 
 const NotFound = () => (
-    <h1>
-        Page not found go back to the main page
+    <div>
+        <h1>Page not found go back to the main page</h1>
         <Link to="/">Home</Link>
-    </h1>
+    </div>
 );
 
 export default NotFound;

@@ -8,6 +8,7 @@ class Navigation extends Component {
         super(props);
 
         this.state = {
+            collapse2: false,
             collapse3: false,
             collapse4: false,
             collapse5: false
@@ -43,6 +44,19 @@ class Navigation extends Component {
             <div>
                 <div>
                     <Link to="/">Home</Link>
+                </div>
+                <div>
+                    <a onClick={this.toggle} id="collapse2">
+                        Zadany BEM SOLID DRY
+                    </a>
+                    <Collapse isOpen={this.state.collapse2}>
+                        <Card>
+                            <Link to="cssAnimations">BEM</Link>
+                            <Link to="cssSass">SOLID</Link>
+                            <Link to="cssFlexbox">DRY</Link>
+                            <Link to="cssGrid">KISS</Link>
+                        </Card>
+                    </Collapse>
                 </div>
 
                 <div>

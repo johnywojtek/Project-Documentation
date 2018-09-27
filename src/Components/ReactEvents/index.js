@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Prism from "prismjs";
-
+import prismJs from "prismjs/components/prism-jsx";
 import "../../styles/main.scss";
 import arrays from "../../data/events";
 import arraysExample from "../../data/eventsExample";
@@ -31,7 +31,7 @@ class ReactEvents extends Component {
                         <p className="mainItem__def ">{e.name}</p>
                     </pre>
                     <pre>
-                        <code className="language-py">
+                        <code className="language-jsx">
                             {e.example.join("\r\n")}
                         </code>
                     </pre>

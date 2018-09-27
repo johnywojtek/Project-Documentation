@@ -75,9 +75,12 @@ pre[class*="language-"] {
 .token.cdata {
     color: #93a1a1; /* base1 */
 }
+.token.operator {
+    color: #dc3545;
+}
 
 .token.punctuation {
-    color: #586e75; /* base01 */
+    color: #dc3545; /* base01 */
 }
 
 .namespace {
